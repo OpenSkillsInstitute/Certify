@@ -1,0 +1,53 @@
+/* Scoped certificate-page design based on the supplied reference image. */
+.certificate-page{--ink:#20271f;--muted:#575b51;--teal:#69714f;--paper:#f7f5ee;--line:#ddded2;--gold:#c8ad64;background:var(--paper);color:var(--ink);font-family:Arial,"Segoe UI",sans-serif;font-size:15px;line-height:1.65}
+.certificate-page .container{width:min(1180px,calc(100% - 80px))}
+.certificate-page h1,.certificate-page h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.04em}
+.certificate-page .workspace-intro{padding:22px 0 28px;align-items:flex-start;position:relative}
+.certificate-page .workspace-intro .eyebrow{display:none;font:11px/1.6 Arial,sans-serif;letter-spacing:.22em;color:#9a956f;margin:0 0 13px}
+.certificate-page .workspace-intro h1{font-size:48px;line-height:1.15;margin-bottom:16px}
+.certificate-page .course-subtitle{font-size:14px;line-height:1.6;margin:0;color:var(--muted)}
+.certificate-page .logout-link{border:0;border-bottom:1px solid #89917e;padding:3px 0 8px;font-size:13px;background:none;color:var(--ink);white-space:nowrap}
+.certificate-page .logout-link span{margin-left:8px}
+.certificate-page .certificate-workspace{grid-template-columns:315px minmax(0,1fr);gap:30px;align-items:start;padding-bottom:0}
+.certificate-page .generator-panel{background:#fffef9;border:1px solid #ddded2;border-radius:0;padding:24px 25px;box-shadow:none}
+.certificate-page .generator-panel h2{font-size:29px;line-height:1.2;margin:0 0 17px}
+.certificate-page .generator-panel>p{font-size:14px;line-height:1.75;margin:0 0 23px}
+.certificate-page .generator-panel form{display:block}
+.certificate-page .form-field{margin:0 0 20px}
+.certificate-page form label{font-size:13px;line-height:1.5;font-weight:400;margin:0 0 8px}
+.certificate-page form input{background:#f7f5ee;border:1px solid #b9bfad;border-radius:0;box-shadow:none;font:16px/1.5 Arial,sans-serif;min-height:50px;padding:11px 13px}
+.certificate-page form input[readonly]{background:#eef0e7;color:#536044}
+.certificate-page form input::placeholder{color:#7d8077}
+.certificate-page .training-facts{display:grid;grid-template-columns:1fr 1.05fr;gap:12px;border-block:1px solid var(--line);padding:18px 0;margin:24px 0 20px;align-items:start}
+.certificate-page .training-facts label{font-size:12px;color:#5a6052;margin-bottom:4px}
+.certificate-page .training-facts input{background:transparent!important;border:0;padding:0;min-height:0;color:var(--ink)!important;font-size:13px;height:25px;letter-spacing:-.02em}
+.certificate-page .reference-field{margin-bottom:0}
+.certificate-page .code-input{font-family:Arial,sans-serif;font-size:15px}
+.certificate-page form small{font-size:11px;line-height:1.7;margin-top:8px}
+.certificate-page .preview-panel{padding:0;min-width:0}
+.certificate-page .preview-toolbar{padding:0 0 10px;align-items:center;gap:15px}
+.certificate-page .preview-toolbar h2{font-size:26px;line-height:1.2;margin:0}
+.certificate-page .preview-toolbar>span{font-size:12px;white-space:nowrap}
+.certificate-page .certificate-frame{padding:0;border:1px solid #e0d4ad;background:#fffef9;border-radius:0;box-shadow:0 12px 30px #3335200c}
+.certificate-page #certificate-canvas{box-shadow:none;background:#fffef9}
+.certificate-page .preview-caption{font-size:12px;line-height:1.7;text-align:center;margin:14px 0 22px}
+.certificate-page .certificate-download{display:flex;flex-direction:column;align-items:center;gap:10px;margin:0}
+.certificate-page .certificate-download .button{border-radius:0;background:#202b23;border:1px solid #202b23;color:#fffef9;padding:16px 23px;font-size:14px;font-weight:400;width:auto;min-height:52px}
+.certificate-page .certificate-download .button:hover:not(:disabled){background:#45503d}
+.certificate-page .certificate-download .button:disabled{background:#8c9186;border-color:#8c9186;opacity:1}
+.certificate-page .certificate-download .small-note{font-size:11px;text-align:center;min-width:0;flex:none;margin:0}
+@media(max-width:1100px){.certificate-page .container{width:calc(100% - 48px)}.certificate-page .certificate-workspace{grid-template-columns:285px minmax(0,1fr);gap:24px}.certificate-page .generator-panel{padding:22px}.certificate-page .generator-panel h2{font-size:26px}.certificate-page .training-facts{grid-template-columns:1fr;gap:10px}.certificate-page .preview-toolbar h2{font-size:23px}}
+@media(max-width:900px){.certificate-page .workspace-intro h1{font-size:42px}.certificate-page .certificate-workspace{grid-template-columns:270px minmax(0,1fr);gap:22px}.certificate-page .generator-panel{padding:21px}.certificate-page .generator-panel h2{font-size:24px}.certificate-page .preview-toolbar{align-items:start;flex-direction:column;gap:4px}}
+@media(max-width:760px){.certificate-page .workspace-intro{padding-top:28px}.certificate-page .workspace-intro h1{font-size:38px}.certificate-page .certificate-workspace{grid-template-columns:1fr;gap:28px}.certificate-page .generator-panel{padding:24px}.certificate-page .generator-panel h2{font-size:28px}.certificate-page .generator-panel form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}.certificate-page .form-field{margin:0}.certificate-page .training-facts{grid-column:1 / -1;grid-template-columns:1fr 1fr;padding:17px 0;margin:0}.certificate-page .training-facts input{font-size:14px}.certificate-page .preview-toolbar{flex-direction:row;align-items:center}.certificate-page .preview-toolbar h2{font-size:26px}.certificate-page .certificate-download .button{font-size:15px}}
+@media(max-width:520px){.certificate-page .container{width:calc(100% - 32px)}.certificate-page .workspace-intro{gap:16px}.certificate-page .workspace-intro h1{font-size:35px}.certificate-page .workspace-intro .eyebrow{font-size:10px;letter-spacing:.12em}.certificate-page .course-subtitle{font-size:13px}.certificate-page .generator-panel form{grid-template-columns:1fr}.certificate-page .preview-toolbar h2{font-size:23px}.certificate-page .preview-toolbar>span{font-size:10px}.certificate-page .preview-caption{font-size:11px}.certificate-page .certificate-download .small-note{font-size:11px}}
+@media print{.certificate-page .certificate-workspace{display:block;width:100%}.certificate-page .certificate-frame{border:0;box-shadow:none}}
+
+/* Keep the same navy header, menus, branding and footer used throughout OSI. */
+.certificate-page .site-header,.certificate-page .site-footer{--ink:#131921;--teal:#a64c00;--paper:#eaeded;--line:#d5d9d9;--muted:#565959;background:#131921;color:#ffffff;font-family:var(--font)}
+.certificate-page .site-header .container,.certificate-page .site-footer .container{width:min(1200px,calc(100% - 80px))}
+.certificate-page .site-footer{margin-top:100px}
+@media(max-width:1050px){.certificate-page .site-header .container,.certificate-page .site-footer .container{width:calc(100% - 48px)}}
+@media(max-width:390px){.certificate-page .site-header .container,.certificate-page .site-footer .container{width:calc(100% - 32px)}}
+
+/* Live SVG text remains selectable; geometry stays sharp at every zoom. */
+#certificate-svg{width:100%;height:auto;display:block;aspect-ratio:1188 / 840;background:#fffef9}#certificate-svg text{user-select:text;-webkit-user-select:text;cursor:text}#certificate-svg image{pointer-events:none}@media print{#certificate-svg{box-shadow:none}}
